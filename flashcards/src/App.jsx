@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   const cards = [
     {
-      question: "What is Travis Scott's Real Name",
+      question: "What is Travis Scott's Real Name?",
       answer: 'Jacques Bermon Webster II'
     },
     {

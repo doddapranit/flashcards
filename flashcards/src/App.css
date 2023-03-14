@@ -58,6 +58,13 @@
   color: #333;
 }
 
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
 /* .flashcard-deck {
   
 } */

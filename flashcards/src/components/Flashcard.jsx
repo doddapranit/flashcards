@@ -10,17 +10,18 @@ function Flashcard(props) {
         setShowBack(!showBack)
     }
     return (
-        <div className="flashcard" onClick={handleClick}>
-          <div className={`flashcard-inner ${showBack ? 'flipped' : ''}`}>
-            <div className="flashcard-front">
-              <h3>{props.question}</h3>
-            </div>
-            <div className="flashcard-back">
-              <p>{props.answer}</p>
-            </div>
+      <div className="flashcard" onClick={props.handleClick}>
+        <div className={`flashcard-inner ${props.isFlipped ? 'flipped' : ''}`}>
+          <div className="flashcard-front">
+            <h3>{props.question}</h3>
+          </div>
+          <div className="flashcard-back">
+            <p>{props.answer}</p>
           </div>
         </div>
-      );
-}
+      </div>
+    );
+  }
+  
 
 export default Flashcard;
